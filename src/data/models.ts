@@ -1,0 +1,88 @@
+import { ModelProfile } from '../types';
+
+export const MODELS: Record<string, ModelProfile> = {
+  gemini: {
+    id: 'gemini',
+    name: 'Gemini 3',
+    creator: 'Google DeepMind',
+    badge: 'Multimodal & Systems',
+    role: 'System Architect & Synthesis Strategist',
+    color: 'from-blue-600 to-indigo-600',
+    bgLight: 'bg-blue-50/80',
+    borderColor: 'border-blue-200',
+    textColor: 'text-blue-700',
+    avatarBg: 'bg-blue-600 text-white',
+    personaSummary: 'Broad systemic view, high-throughput context synthesis, multi-modal implications, and Google-scale architecture intuition.',
+    coreStrength: 'Scalability, ecosystems, context-wide pattern synthesis',
+  },
+  chatgpt: {
+    id: 'chatgpt',
+    name: 'ChatGPT (GPT-4o)',
+    creator: 'OpenAI',
+    badge: 'Pragmatic Generalist',
+    role: 'Pragmatic Problem Solver & Strategy Lead',
+    color: 'from-emerald-600 to-teal-600',
+    bgLight: 'bg-emerald-50/80',
+    borderColor: 'border-emerald-200',
+    textColor: 'text-emerald-700',
+    avatarBg: 'bg-emerald-600 text-white',
+    personaSummary: 'Action-oriented execution, balanced trade-offs, intuitive user empathy, structured roadmaps, and versatile real-world problem solving.',
+    coreStrength: 'Actionable steps, user-centric prioritization, practical trade-offs',
+  },
+  claude: {
+    id: 'claude',
+    name: 'Claude 3.7 Sonnet',
+    creator: 'Anthropic',
+    badge: 'Nuance & Epistemic Rigor',
+    role: 'Critical Thinker & Safety Auditor',
+    color: 'from-amber-600 to-orange-600',
+    bgLight: 'bg-amber-50/80',
+    borderColor: 'border-amber-200',
+    textColor: 'text-amber-700',
+    avatarBg: 'bg-amber-600 text-white',
+    personaSummary: 'Deep epistemic humility, thorough edge-case analysis, ethical implications, self-reflection, and dissecting subtle counter-arguments.',
+    coreStrength: 'Edge cases, ethical clarity, second-order effects, intellectual honesty',
+  },
+  perplexity: {
+    id: 'perplexity',
+    name: 'Perplexity',
+    creator: 'Perplexity AI',
+    badge: 'Empirical Verification',
+    role: 'Fact Auditor & Evidence Inquisitor',
+    color: 'from-cyan-600 to-teal-700',
+    bgLight: 'bg-cyan-50/80',
+    borderColor: 'border-cyan-200',
+    textColor: 'text-cyan-700',
+    avatarBg: 'bg-cyan-600 text-white',
+    personaSummary: 'Empirical data grounding, live fact checking, real-world benchmarks, scrutinizing claims against verifiable research and industry precedents.',
+    coreStrength: 'Factual verification, benchmarks, empirical evidence, source scrutiny',
+  },
+};
+
+export const SAMPLE_QUERIES = [
+  {
+    title: 'Fintech Tech Stack Architecture',
+    query: 'What is the most suitable backend and database architecture for a high-volume fintech startup processing real-time payments and requiring strict auditability?',
+    category: 'Engineering & Architecture',
+  },
+  {
+    title: 'Nuclear Energy vs 100% Renewables',
+    query: 'Is nuclear fission essential for achieving global net-zero emissions by 2050, or can a 100% renewable grid with modern energy storage scale sufficiently?',
+    category: 'Policy & Climate',
+  },
+  {
+    title: '5-Year $50k Investment Strategy',
+    query: 'What is the optimal risk-adjusted allocation strategy for $50,000 intended for a home down payment in exactly 5 years in current macroeconomic conditions?',
+    category: 'Finance & Economics',
+  },
+  {
+    title: 'Microservices vs Modular Monolith',
+    query: 'Should an early-stage B2B SaaS startup with a team of 8 engineers build a modular monolith or microservices architecture from day one?',
+    category: 'Software Strategy',
+  },
+  {
+    title: 'Human Longevity Interventions',
+    query: 'Based on current clinical human evidence (not just rodent studies), what are the top 3 most evidence-supported interventions for biological healthspan?',
+    category: 'Health & Science',
+  },
+];

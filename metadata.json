@@ -1,0 +1,6 @@
+{
+  "name": "AI Council Deliberation",
+  "description": "Multi-agent AI debate platform where Gemini, ChatGPT, Claude, and Perplexity thoroughly analyze queries and synthesize the optimal consensus report.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
